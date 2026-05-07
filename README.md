@@ -16,7 +16,7 @@ If you ship LLM features and burn $20k+/mo on inference, you're probably overpay
 **It is:**
 - A pre-flight + post-flight audit kit you can run on your RAG system in <10 min
 - A regression harness you can drop into CI (`pytest`-compatible)
-- The same toolkit I run in `$12-15k` audit engagements — open-sourced because eval methodology is not the moat
+- Toolkit productized for `$12-15k` audit engagements — open-sourced because eval methodology is not the moat
 
 ## Headline numbers (HotpotQA dev, 100Q, run 2026-05-07)
 
