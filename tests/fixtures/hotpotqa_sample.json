@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "5a8b57f25542995d1e6f1371",
+    "answer": "yes",
+    "question": "Were Scott Derrickson and Ed Wood of the same nationality?",
+    "supporting_facts": [["Scott Derrickson", 0], ["Ed Wood", 0]],
+    "context": [
+      ["Scott Derrickson", ["Scott Derrickson (born July 16, 1966) is an American director.", "He lives in Los Angeles, California."]],
+      ["Ed Wood", ["Edward Davis Wood Jr. (October 10, 1924 - December 10, 1978) was an American filmmaker, actor, writer, producer, and director."]],
+      ["A Plumm Summer", ["A Plumm Summer is a 2007 family drama film directed by Caroline Zelder.", "It was theatrically released in the United States on April 25, 2008."]]
+    ],
+    "type": "comparison",
+    "level": "hard"
+  },
+  {
+    "_id": "5a7e7c2b5542991f7028fa17",
+    "answer": "1979",
+    "question": "When was The Hitchhiker's Guide to the Galaxy first published?",
+    "supporting_facts": [["The Hitchhiker's Guide to the Galaxy", 0]],
+    "context": [
+      ["Douglas Adams", ["Douglas Noel Adams (11 March 1952 - 11 May 2001) was an English author, scriptwriter, essayist, humorist, satirist and dramatist."]],
+      ["The Hitchhiker's Guide to the Galaxy", ["The Hitchhiker's Guide to the Galaxy is a comic science fiction series created by Douglas Adams.", "Originally a 1978 radio comedy broadcast, the first novel adaptation was published in October 1979."]]
+    ],
+    "type": "bridge",
+    "level": "easy"
+  },
+  {
+    "_id": "5a8b57f25542995d1e6f1372",
+    "answer": "Linus Torvalds",
+    "question": "Who created Linux?",
+    "supporting_facts": [["Linux", 0]],
+    "context": [
+      ["Linux", ["Linux is a family of open-source Unix-like operating systems based on the Linux kernel.", "The Linux kernel was created in 1991 by Linus Torvalds, a Finnish-American software engineer."]]
+    ],
+    "type": "bridge",
+    "level": "medium"
+  }
+]

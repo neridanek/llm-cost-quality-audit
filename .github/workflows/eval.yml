@@ -1,0 +1,59 @@
+name: Eval Regression
+
+# Example workflow — drop into your RAG repo to fail PRs that regress quality.
+#
+# This template assumes:
+#   1. You commit a `eval_results/baseline.json` (gold standard) to your repo
+#      OR fetch it from an artifact / S3 / git-lfs in a prior step.
+#   2. You run your eval pipeline to produce `eval_results/current.json`.
+#   3. `lcqa eval-regress` exits non-zero if quality drops beyond the threshold.
+
+on:
+  pull_request:
+    paths:
+      - "src/**"
+      - "prompts/**"
+      - "configs/**"
+  workflow_dispatch:
+
+jobs:
+  regress:
+    name: faithfulness regression check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install lcqa
+        run: pip install lcqa
+
+      # ---- Replace this with your real eval pipeline ----
+      - name: Run eval
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          # python eval_pipeline.py --output eval_results/current.json
+          # ↑ Uncomment & replace with your script.
+          # The example below uses example 03 to keep this template self-contained.
+          python examples/03_regression_ci.py
+      # ---------------------------------------------------
+
+      - name: Regression check (faithfulness)
+        run: |
+          lcqa eval-regress \
+            eval_results/example_03_baseline.json \
+            eval_results/example_03_current.json \
+            --threshold 0.05
+
+      - name: Upload eval artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eval-results
+          path: eval_results/
+          retention-days: 30
