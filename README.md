@@ -121,7 +121,7 @@ Wiktor N. — senior data engineer (8yr Databricks Lakehouse migrations + agenti
 
 - 🎯 **LLM Cost Quick-Win Sprint** — $6-9k, 3-5 days. **Native fit if you read this toolkit.** You already know which lever is bleeding (model routing / semantic cache / prompt compression / context trimming) and want it shipped. I trace cost, scope the lever, ship 3 PRs to your repo, measure production impact. Target: 25-50% reduction on the targeted use case.
 - 🎯 **RAG Eval Suite Build (Mini-Audit)** — $8-12k, 5-7 days. Native fit if you read this toolkit AND ship RAG. 100Q+ golden test set + Ragas-style scorers + CI regression hook + dashboard.
-- **LLM Cost & Quality Audit** — $12-15k, 1.5 weeks. Pick this if you have 3+ AI features and CFO is asking about the whole bill (NOT just one lever). Full attribution + eval baseline + 30-65% optimization roadmap + eval harness wired to CI for ongoing regression detection.
+- **LLM Cost & Quality Audit** — $12-15k, 2 weeks. Pick this if you have 3+ AI features and CFO is asking about the whole bill (NOT just one lever). Full attribution + eval baseline + 30-65% optimization roadmap + eval harness wired to CI for ongoing regression detection.
 - **LLM Quality Maintenance Retainer** — $3-10k/mo. Scheduled eval + drift alerts + monthly readout. Cross-sell post-LCQA / post-Mini-Audit.
 - **Paid Discovery** — $3-5k, 3-5 days. Scoped technical readout for clients evaluating multiple AI directions; counts as credit toward any subsequent engagement signed within 21 days.
 
