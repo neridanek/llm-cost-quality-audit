@@ -16,7 +16,7 @@ If you ship LLM features and burn $20k+/mo on inference, you're probably overpay
 **It is:**
 - A pre-flight + post-flight audit kit you can run on your RAG system in <10 min
 - A regression harness you can drop into CI (`pytest`-compatible)
-- Toolkit productized for `$12-15k` audit engagements — open-sourced because eval methodology is not the moat
+- Toolkit productized into fixed-fee audit engagements — open-sourced because eval methodology is not the moat
 
 ## Headline numbers (HotpotQA dev, 100Q, run 2026-05-07)
 
@@ -119,11 +119,13 @@ Wiktor N. — senior data engineer (8yr Databricks Lakehouse migrations + agenti
 
 **If you've read this toolkit's code, you're already qualified for the matching paid engagement.** Productized fixed-fee, 1-2 weeks, locked scope:
 
-- 🎯 **LLM Cost Quick-Win Sprint** — $6-9k, 3-5 days. **Native fit if you read this toolkit.** You already know which lever is bleeding (model routing / semantic cache / prompt compression / context trimming) and want it shipped. I trace cost, scope the lever, ship 3 PRs to your repo, measure production impact. Target: 25-50% reduction on the targeted use case.
-- 🎯 **RAG Eval Suite Build (Mini-Audit)** — $8-12k, 5-7 days. Native fit if you read this toolkit AND ship RAG. 100Q+ golden test set + Ragas-style scorers + CI regression hook + dashboard.
-- **LLM Cost & Quality Audit** — $12-15k, 2 weeks. Pick this if you have 3+ AI features and CFO is asking about the whole bill (NOT just one lever). Full attribution + eval baseline + 30-65% optimization roadmap + eval harness wired to CI for ongoing regression detection.
-- **LLM Quality Maintenance Retainer** — $3-10k/mo. Scheduled eval + drift alerts + monthly readout. Cross-sell post-LCQA / post-Mini-Audit.
-- **Paid Discovery** — $3-5k, 3-5 days. Scoped technical readout for clients evaluating multiple AI directions; counts as credit toward any subsequent engagement signed within 21 days.
+- 🎯 **LLM Cost Quick-Win Sprint** — 3-5 days, fixed-fee. **Native fit if you read this toolkit.** You already know which lever is bleeding (model routing / semantic cache / prompt compression / context trimming) and want it shipped. I trace cost, scope the lever, ship 3 PRs to your repo, measure production impact. Target: 25-50% reduction on the targeted use case.
+- 🎯 **RAG Eval Suite Build (Mini-Audit)** — 5-7 days, fixed-fee. Native fit if you read this toolkit AND ship RAG. 100Q+ golden test set + Ragas-style scorers + CI regression hook + dashboard.
+- **LLM Cost & Quality Audit** — 2 weeks, fixed-fee. Pick this if you have 3+ AI features and CFO is asking about the whole bill (NOT just one lever). Full attribution + eval baseline + 30-65% optimization roadmap + eval harness wired to CI for ongoing regression detection.
+- **LLM Quality Maintenance Retainer** — monthly retainer. Scheduled eval + drift alerts + monthly readout. Cross-sell post-LCQA / post-Mini-Audit.
+- **Paid Discovery** — 3-5 days, fixed-fee. Scoped technical readout for clients evaluating multiple AI directions; counts as credit toward any subsequent engagement signed within 21 days.
+
+> Pricing shared in a written proposal after a short intro call — see [genai-data-solutions.pages.dev](https://genai-data-solutions.pages.dev).
 
 EU-based, fully remote, US + EU clients. Direct: [LinkedIn](https://www.linkedin.com/in/wnnn/) — DM if you want help on a paid engagement, or open an issue if something here breaks.
 
